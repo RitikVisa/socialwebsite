@@ -2,8 +2,12 @@
 body, html {
     margin: 0;
     padding: 0;
-    height: 100%;
+    width: 100%;
     font-family: 'Epilogue', sans-serif;
+}
+
+.m-color{
+    color:#5928E5 ;
 }
 
 
@@ -82,13 +86,13 @@ cursor: none;
 .hidden{
     opacity: 0;
     filter: blur(3px);
-    transform: translate(80%);
+    transform: translateX(80%);
     transition: all 1.5s;
   }
   .hidden-2{
     opacity: 0;
     filter: blur(2px);
-    transform: translate(-100% );
+    transform: translateX(-100% );
     transition: all 1.5s;
   }
   .show{
@@ -96,3 +100,18 @@ cursor: none;
     filter: blur(0);
     transform: translate(0);
   }  
+  .service{
+    overflow: hidden;
+  }
+  /* confuse cards */
+  .confuse-card{
+    background-color: #FFD9D9;
+  }
+  .confuse-card:hover{
+    color: #fff;
+    background-color: #5928E5;
+  }
+  span{
+    color: black;
+  }
+  
