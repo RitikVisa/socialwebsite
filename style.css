@@ -7,7 +7,7 @@ body, html {
 }
 
 .m-color{
-    color:#5928E5 ;
+    color:#3A48E8 ;
 }
 
 
@@ -16,17 +16,21 @@ body, html {
     top: 0;
     left: 0;
     right: 0;
-    background-color: #333;
+    background-color: #fffdfd;
     padding: 15px 0;
-    color: #fff;
+    color: #3A48E8;
     z-index: 100;
 }
 
-.navbar a {
-    color: #fff;
+.navbar a,h3 {
+    color: #3A48E8;
     text-decoration: none;
     margin: 0 15px;
     /* font-weight: bold; */
+}
+
+.navbar a:hover{
+  color: #333;
 }
 
 
@@ -66,21 +70,23 @@ h1 {
 }
 
 p {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .title{
-color: #5928E5;
+color: #3A48E8;
 cursor: none;
 }
 
 .hero-btn{
-    background-color: #5928E5;
+    background-color: #3A48E8;
     padding: 1rem 1.5rem;
+    color: #fff;
 }
 
 .hero-btn:hover{
-    background-color: #333;
+    background-color: #ffffff;
+    color: #3A48E8;
 }
 /* Additional styling can be applied as needed */
 .hidden{
@@ -102,6 +108,7 @@ cursor: none;
   }  
   .service{
     overflow: hidden;
+    background-color: #3A48E8;
   }
   /* confuse cards */
   .confuse-card{
@@ -109,9 +116,46 @@ cursor: none;
   }
   .confuse-card:hover{
     color: #fff;
-    background-color: #5928E5;
+    background-color: #3A48E8;
   }
   span{
     color: black;
   }
   
+  .service button{
+    background-color: #fff;
+    color: #3A48E8;
+  }
+
+  .service button:hover{
+    background-color: #333;
+    color: #fff;
+  }
+  span{
+    font-weight: bold;
+  }
+
+  .step{
+    margin: 5rem 0rem;
+  }
+
+  .process{
+    margin-top: 8rem;
+    font-size: 64px;
+    font-weight: bolder;
+  }
+
+  footer{
+    /* margin: 6rem 0rem; */
+    background-color: #3A48E8;
+  }
+
+ a,li{
+
+    text-decoration: none;
+    margin: 1rem 0rem; 
+    color: #fff;
+  }
+  ul{
+    margin: 6rem 0rem;
+  }
