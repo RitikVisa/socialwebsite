@@ -1,161 +1,223 @@
 /* Reset some default styles and set up the navbar styles */
-body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    font-family: 'Epilogue', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: "Epilogue", sans-serif;
+  overflow-x: hidden;
 }
 
-.m-color{
-    color:#3A48E8 ;
+.m-color {
+  color: #3a48e8;
 }
-
 
 .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #fffdfd;
-    padding: 15px 0;
-    color: #3A48E8;
-    z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fffdfd;
+  padding: 15px 0;
+  color: #3a48e8;
+  z-index: 100;
 }
 
-.navbar a,h3 {
-    color: #3A48E8;
-    text-decoration: none;
-    margin: 0 15px;
-    /* font-weight: bold; */
+.navbar a,
+h3 {
+  color: #3a48e8;
+  text-decoration: none;
+  margin: 0 15px;
+  /* font-weight: bold; */
 }
 
-.navbar a:hover{
+.navbar a:hover {
   color: #333;
 }
 
-
-
 /* Style the hero section with the video background and overlay */
 .hero-section {
-    position: relative;
-    height: 100vh;
+  position: relative;
+  height: 100vh;
 }
 
 .video-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /* background: rgba(0, 0, 0, 0.5); */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: rgba(0, 0, 0, 0.5); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
 }
 
 h1 {
-    font-size: 2em;
+  font-size: 2em;
 }
 
 p {
-    font-size: 16px;
+  font-size: 16px;
 }
 
-.title{
-color: #3A48E8;
-cursor: none;
+.title {
+  color: #3a48e8;
+  cursor: none;
 }
 
-.hero-btn{
-    background-color: #3A48E8;
-    padding: 1rem 1.5rem;
-    color: #fff;
+.hero-btn {
+  background-color: #3a48e8;
+  padding: 1rem 1.5rem;
+  color: #fff;
 }
 
-.hero-btn:hover{
-    background-color: #ffffff;
-    color: #3A48E8;
+.hero-btn:hover {
+  background-color: #ffffff;
+  color: #3a48e8;
 }
 /* Additional styling can be applied as needed */
-.hidden{
-    opacity: 0;
-    filter: blur(3px);
-    transform: translateX(80%);
-    transition: all 1.5s;
-  }
-  .hidden-2{
-    opacity: 0;
-    filter: blur(2px);
-    transform: translateX(-100% );
-    transition: all 1.5s;
-  }
-  .show{
-    opacity: 1;
-    filter: blur(0);
-    transform: translate(0);
-  }  
-  .service{
-    overflow: hidden;
-    background-color: #3A48E8;
-  }
-  /* confuse cards */
-  .confuse-card{
-    background-color: #FFD9D9;
-  }
-  .confuse-card:hover{
-    color: #fff;
-    background-color: #3A48E8;
-  }
-  span{
-    color: black;
-  }
-  
-  .service button{
-    background-color: #fff;
-    color: #3A48E8;
-  }
+.hidden {
+  opacity: 0;
+  filter: blur(3px);
+  transform: translateX(80%);
+  transition: all 1.5s;
+}
+.hidden-2 {
+  opacity: 0;
+  filter: blur(2px);
+  transform: translateX(-100%);
+  transition: all 1.5s;
+}
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translate(0);
+}
+.service {
+  overflow: hidden;
+  background-color: #3a48e8;
+}
+/* confuse cards */
+.confuse-card {
+  background-color: #ffd9d9;
+}
+.confuse-card:hover {
+  color: #fff;
+  background-color: #3a48e8;
+}
+span {
+  color: black;
+}
 
-  .service button:hover{
-    background-color: #333;
-    color: #fff;
-  }
-  span{
-    font-weight: bold;
-  }
+.service button {
+  background-color: #fff;
+  color: #3a48e8;
+}
 
-  .step{
-    margin: 5rem 0rem;
-  }
+.service button:hover {
+  background-color: #333;
+  color: #fff;
+}
+span {
+  font-weight: bold;
+}
 
-  .process{
-    margin-top: 8rem;
-    font-size: 64px;
-    font-weight: bolder;
-  }
+.step {
+  margin: 5rem 0rem;
+}
 
-  footer{
-    /* margin: 6rem 0rem; */
-    background-color: #3A48E8;
-  }
+.process {
+  font-size: 64px;
+  font-weight:900;
+  background: -webkit-linear-gradient(90deg, rgba(171,58,232,1) 0%, rgba(58,72,232,1) 55%, rgba(171,58,232,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  
+}
 
- a,li{
+footer {
+  /* margin: 6rem 0rem; */
+  background: rgb(171,58,232);
+  background: linear-gradient(90deg, rgba(171,58,232,1) 0%, rgba(58,72,232,1) 55%, rgba(171,58,232,1) 100%);
+}
 
-    text-decoration: none;
-    margin: 1rem 0rem; 
-    color: #fff;
-  }
-  ul{
-    margin: 6rem 0rem;
-  }
+a,
+li {
+  text-decoration: none;
+  margin: 1rem 0rem;
+  color: #fff;
+}
+ul {
+  margin: 6rem 0rem;
+}
+
+.box {
+  position: relative;
+  right: 0;
+  top: 0;
+
+  text-align: center;
+  background-color: #e8ce3a;
+  width: 500px;
+  height: 50px;
+  margin: 1rem 1rem;
+  border-radius: 4px;
+  transform:  rotate(30deg) translateX(800px);
+}
+
+.box-2 {
+  position: relative;
+ 
+  /* text-align: center; */
+  background-color: #3a48e8;
+  width: 500px;
+  height: 30px;
+  /* margin: 1rem 1rem; */
+  border-radius: 4px;
+  transform: translateY(-50px) rotate(30deg) translateX(-800px);
+}
+
+.box-3 {
+  position: relative;
+ 
+  /* text-align: center; */
+  background-color: #9a3ae8;
+  width: 500px;
+  height: 40px;
+  /* margin: 1rem 1rem; */
+  border-radius: 4px;
+  transform: translateY(-50px) rotate(30deg) translateX(800px);
+}
+
+#hero{
+  position: relative;
+}
+.html,body{
+  scroll-snap-type: Y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+section{
+  height: 100vh;
+  scroll-snap-align: start;
+}
+footer{
+  margin-top: 6rem;
+  scroll-snap-align: start;
+}
