@@ -215,9 +215,36 @@ ul {
 }
 section{
   height: 100vh;
+  scroll-behavior:smooth;
   scroll-snap-align: start;
 }
 footer{
   margin-top: 6rem;
   scroll-snap-align: start;
+}
+
+/* about */
+.value-card{
+ background-color: #F1F1F1;
+}
+
+.font-small{
+  font-size: 12px;
+}
+
+h4{
+  color: #3a48e8;
+}
+
+#value-section{
+  height: auto;
+}
+
+.about-summary{
+  height: 100vh;
+}
+
+.value-heading{
+  margin-top: 6rem;
+  margin-bottom: 4rem;
 }
